@@ -3,11 +3,13 @@ package TechCompany;
 public class CompanyDemo {
 
     public static void main(String[] args) {
-        // Employee emp1 = new Developer("Alice", "Developer", "Java");
-        // Employee emp2 = new Manager("Bob", "Manager", 3);
-        // Employee[] staff = { emp1, emp2 };
-        // for (Employee e : staff) {
-        //     e.work();   // dynamic binding: runs Developer.work() for Alice, Manager.work() for Bob
-        // }
+        Employee jake = new Developer("Jake", "Developer", "Flappy Bird");
+        String[] johnProjects = {"Flappy Bird", "Geometry Dash", "Tetris"};
+        Employee john = new Manager("John", "Manager", johnProjects, 180);
+
+        jake.work();
+        john.work();
+        System.out.println(jake);
+        System.out.println(john);
     }
 }

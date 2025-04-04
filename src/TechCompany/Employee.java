@@ -12,4 +12,15 @@ public class Employee {
     public void work() {
         System.out.println(name + " is working as a " + title);
     }
+
+    public String getName(){
+        return name;
+    }
+    public String getTitle(){
+        return title;
+    }
+
+    public String toString(){
+        return name + "; " + title;
+    }
 }
